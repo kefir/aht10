@@ -4,9 +4,9 @@
  * @brief Platform-agnostic AHT10 library for embedded systems
  * @version 0.1
  * @date 2021-05-16
- * 
+ *
  * @copyright Copyright (c) 2021
- * 
+ *
  */
 #pragma once
 
@@ -19,7 +19,7 @@ extern "C" {
 
 /**
  * @brief AHT10 error code definitions
- * 
+ *
  */
 typedef enum {
     AHT10_OK = 0, /**< No error*/
@@ -34,8 +34,8 @@ typedef enum {
 } aht10_cmd_e;
 
 /**
- * @brief AHT10 I2C driver 
- * 
+ * @brief AHT10 I2C driver
+ *
  */
 typedef struct
 {
@@ -57,7 +57,7 @@ typedef union {
 
 /**
  * @brief AHT10 measurement data
- * 
+ *
  */
 typedef struct {
     uint32_t temperature;
@@ -66,7 +66,7 @@ typedef struct {
 
 /**
  * @brief Initializes AHT10
- * 
+ *
  * @param driver pointer to aht10_driver_t driver structure
  * @return aht10_err Error code
  */
